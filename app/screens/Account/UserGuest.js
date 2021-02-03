@@ -14,21 +14,21 @@ export default function UserGuest() {
       <ScrollView centerContent={true} style={styles.viewBody}>
         <Image
           source={require("../../../assets/img/user-guest.jpg")}
-                resizeMode="contain"
-                style={styles.image}
-            />
-            <Text style={styles.title}>Consulta tu perfil de 5 Tenedores</Text>
-            <Text style={styles.description}>
-                Vota cual es tu resturante favorito
-            </Text>
-            <View style={styles.viewBtn}>
-                <Button
-                    title="Ver tu perfil"
-                    buttonStyle={styles.btnStyle }
-                    containerStyle={styles.btnContainer }
-                    onPress={() => navigation.navigate("login")}
-                />
-            </View>
+          resizeMode="contain"
+          style={styles.image}
+        />
+        <Text style={styles.title}>Consulta tu perfil de 5 Tenedores</Text>
+        <Text style={styles.description}>
+          Vota cual es tu resturante favorito
+        </Text>
+        <View style={styles.viewBtn}>
+          <Button
+            title="Ver tu perfil"
+            buttonStyle={styles.btnStyle}
+            containerStyle={styles.btnContainer}
+            onPress={() => navigation.navigate("login")}
+          />
+        </View>
       </ScrollView>
     );
 }
